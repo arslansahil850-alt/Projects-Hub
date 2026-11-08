@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Arslan's Project Hub | Arslan Weblab</title>
+  <meta name="description" content="A centralized platform showcasing web development projects, portfolios, experiments, and future work by Arslan Weblab.">
+  <meta property="og:title" content="Arslan's Project Hub">
+  <meta property="og:description" content="Explore a collection of digital experiences, creative experiments, and web development projects.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://arslan-weblab.netlify.app/">
+  <link rel="stylesheet" href="./style.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js" defer></script>
+  <script src="./script.js" defer></script>
+</head>
+<body data-theme="system">
+  <header class="header" id="header">
+    <div class="nav-container">
+      <a href="https://arslan-weblab.netlify.app/" class="brand-logo" target="_blank" rel="noopener noreferrer">
+        <img src="logo.webp" alt="Arslan Weblab Logo" class="logo-img" onerror="this.style.display='none'">
+        <span class="brand-text">Arslan Weblab</span>
+      </a>
+      <nav class="nav-menu" id="navMenu">
+        <ul class="nav-list">
+          <li><a href="#home" class="nav-link active">Home</a></li>
+          <li><a href="#projects" class="nav-link">Projects</a></li>
+          <li><a href="#portfolio" class="nav-link">Portfolio</a></li>
+          <li><a href="https://github.com/arslansahil850-alt/" class="nav-link" target="_blank" rel="noopener noreferrer">GitHub</a></li>
+          <li><a href="#contact" class="nav-link">Let's Connect</a></li>
+        </ul>
+      </nav>
+      <div class="nav-actions">
+        <button class="icon-btn search-trigger-btn" id="searchTriggerBtn" aria-label="Open Global Search (Ctrl + K)">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg>
+          <span class="search-shortcut-hint">Ctrl K</span>
+        </button>
+        <div class="theme-dropdown-container">
+          <select id="themeSelector" class="theme-selector" aria-label="Select Theme">
+            <option value="system">System</option>
+            <option value="light">Light</option>
+            <option value="dark">Dark</option>
+          </select>
+        </div>
+        <button class="mobile-menu-toggle" id="mobileMenuToggle" aria-label="Toggle Mobile Navigation">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero-section" id="home">
+      <div class="hero-container">
+        <div class="hero-content">
+          <div class="hero-badge-pill">Digital Universe &amp; Showcase</div>
+          <h1 class="hero-title">Your Projects. Your Journey. Your Digital Universe.</h1>
+          <p class="hero-description">Explore a collection of digital experiences, creative experiments, and web development projects crafted with passion and modern engineering.</p>
+          <div class="hero-buttons">
+            <a href="#projects" class="btn btn-primary">Explore My Projects</a>
+            <a href="https://github.com/arslansahil850-alt/" class="btn btn-secondary" target="_blank" rel="noopener noreferrer">Visit GitHub</a>
+          </div>
+        </div>
+        <div class="hero-visual" id="heroVisual">
+          <div class="floating-glass-card card-1">
+            <span class="card-tag">Frontend</span>
+            <h4>Interactive UIs</h4>
+          </div>
+          <div class="floating-glass-card card-2">
+            <span class="card-tag">Backend</span>
+            <h4>REST APIs &amp; DBs</h4>
+          </div>
+          <div class="floating-glass-card card-3">
+            <span class="card-tag">Full Stack</span>
+            <h4>Scalable Apps</h4>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="stats-overview-section" id="statsOverview">
+      <div class="container">
+        <div class="stats-grid">
+          <div class="stat-card">
+            <div class="stat-number" id="statTotalProjects">0</div>
+            <div class="stat-label">Total Projects</div>
+          </div>
+          <div class="stat-card">
+            <div class="stat-number" id="statFrontendProjects">0</div>
+            <div class="stat-label">Frontend Projects</div>
+          </div>
+          <div class="stat-card">
+            <div class="stat-number" id="statBackendProjects">0</div>
+            <div class="stat-label">Backend Projects</div>
+          </div>
+          <div class="stat-card">
+            <div class="stat-number" id="statFullstackProjects">0</div>
+            <div class="stat-label">Full Stack Projects</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="projects-universe-section" id="projects">
+      <div class="container projects-layout-wrapper">
+        <aside class="project-sidebar" id="projectSidebar">
+          <div class="sidebar-header">
+            <h3>Explorer</h3>
+            <button class="sidebar-close-btn" id="sidebarCloseBtn" aria-label="Close Sidebar">&times;</button>
+          </div>
+          <div class="sidebar-categories" id="sidebarCategories">
+          </div>
+        </aside>
+        <div class="sidebar-overlay" id="sidebarOverlay"></div>
+
+        <div class="projects-main-content">
+          <div class="projects-toolbar">
+            <button class="sidebar-toggle-btn" id="sidebarToggleBtn" aria-label="Toggle Category Sidebar">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="3" y1="12" x2="21" y2="12"></line><line x1="3" y1="6" x2="21" y2="6"></line><line x1="3" y1="18" x2="21" y2="18"></line></svg>
+              <span>Categories</span>
+            </button>
+            <div class="search-filter-wrapper">
+              <div class="quick-search-box">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg>
+                <input type="text" id="quickSearchInput" placeholder="Search projects by title, tech, tag..." aria-label="Quick Project Search">
+              </div>
+              <div class="sorting-select-wrapper">
+                <select id="sortSelect" class="sort-select" aria-label="Sort Projects">
+                  <option value="featured">Featured</option>
+                  <option value="newest">Newest</option>
+                  <option value="oldest">Oldest</option>
+                  <option value="az">A to Z</option>
+                  <option value="za">Z to A</option>
+                </select>
+              </div>
+            </div>
+          </div>
+
+          <div class="active-filters-bar" id="activeFiltersBar" style="display: none;">
+            <span class="active-filter-label" id="activeFilterText">Filtered by: All Projects</span>
+            <button class="clear-filters-btn" id="clearFiltersBtn">Clear Filters</button>
+          </div>
+
+          <div class="projects-grid-container" id="projectsGridContainer">
+          </div>
+
+          <div class="pagination-container" id="paginationContainer" style="display: none;">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="portfolio-showcase-section" id="portfolio">
+      <div class="container">
+        <div class="section-title-group">
+          <h2>Professional Portfolios</h2>
+          <p>Explore my main professional presence and verified brand links.</p>
+        </div>
+        <div class="portfolio-grid" id="portfolioGrid">
+        </div>
+      </div>
+    </section>
+
+    <section class="about-section" id="about">
+      <div class="container about-container">
+        <div class="about-image-wrapper">
+          <img src="images/profile.webp" alt="Arslan Profile Picture" class="about-profile-img" onerror="this.style.display='none'">
+        </div>
+        <div class="about-content">
+          <h2>Building Ideas Into Digital Experiences</h2>
+          <p>This platform serves as a centralized hub showcasing my web development journey, technical projects, creative experiments, and professional portfolio. I specialize in building responsive, high-performance, and beautifully engineered digital products across frontend and backend ecosystems.</p>
+          <div class="tech-stack-badges">
+            <span class="tech-badge">HTML5</span>
+            <span class="tech-badge">CSS3</span>
+            <span class="tech-badge">JavaScript</span>
+            <span class="tech-badge">Python</span>
+            <span class="tech-badge">C++</span>
+            <span class="tech-badge">Node.js</span>
+            <span class="tech-badge">Express.js</span>
+            <span class="tech-badge">React</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="contact-section" id="contact">
+      <div class="container contact-container">
+        <div class="section-title-group">
+          <h2>Let's Connect</h2>
+          <p>Have a project in mind, a question, or want to collaborate? Send a message directly.</p>
+        </div>
+        <div class="contact-wrapper">
+          <div class="contact-info-cards">
+            <div class="contact-info-card">
+              <h4>Email</h4>
+              <a href="mailto:arslansahil850@gmail.com">arslansahil850@gmail.com</a>
+            </div>
+            <div class="contact-info-card">
+              <h4>GitHub</h4>
+              <a href="https://github.com/arslansahil850-alt/" target="_blank" rel="noopener noreferrer">arslansahil850-alt</a>
+            </div>
+            <div class="contact-info-card">
+              <h4>Messaging</h4>
+              <span class="contact-id-text">WhatsApp: ArslanSahil2011</span>
+            </div>
+          </div>
+          <form class="contact-form" id="contactForm">
+            <div class="form-group">
+              <label for="contactName">Your Name</label>
+              <input type="text" id="contactName" required placeholder="Enter your full name">
+            </div>
+            <div class="form-group">
+              <label for="contactEmail">Your Email</label>
+              <input type="email5" type="email" id="contactEmail" required placeholder="name@example.com">
+            </div>
+            <div class="form-group">
+              <label for="contactPurpose">Purpose</label>
+              <select id="contactPurpose" required>
+                <option value="" disabled selected>Select purpose</option>
+                <option value="freelance">Freelance Project</option>
+                <option value="collaboration">Collaboration</option>
+                <option value="hiring">Job / Hiring Opportunity</option>
+                <option value="general">General Inquiry</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="contactMessage">Message</label>
+              <textarea id="contactMessage" rows="5" required placeholder="Write your message here..."></textarea>
+            </div>
+            <div class="form-feedback" id="formFeedback" style="display: none;"></div>
+            <button type="submit" class="btn btn-primary btn-full">Send Message</button>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-container">
+      <div class="footer-col brand-col">
+        <a href="https://arslan-weblab.netlify.app/" class="brand-logo" target="_blank" rel="noopener noreferrer">
+          <img src="logo.webp" alt="Arslan Weblab Logo" class="logo-img" onerror="this.style.display='none'">
+          <span class="brand-text">Arslan Weblab</span>
+        </a>
+        <p class="footer-desc">A professional project showcase and digital universe built by Arslan Weblab.</p>
+      </div>
+      <div class="footer-col">
+        <h4>Quick Links</h4>
+        <ul class="footer-links-list">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#projects">Projects Explorer</a></li>
+          <li><a href="#portfolio">Portfolio Showcase</a></li>
+          <li><a href="#about">About Me</a></li>
+          <li><a href="#contact">Let's Connect</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Project Categories</h4>
+        <ul class="footer-links-list">
+          <li><a href="#projects" class="footer-cat-link" data-cat="frontend">Frontend Projects</a></li>
+          <li><a href="#projects" class="footer-cat-link" data-cat="backend">Backend Projects</a></li>
+          <li><a href="#projects" class="footer-cat-link" data-cat="full-stack">Full Stack Projects</a></li>
+          <li><a href="https://github.com/arslansahil850-alt/" target="_blank" rel="noopener noreferrer">GitHub Repositories</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Get in Touch</h4>
+        <p class="footer-contact-info">Email: <a href="mailto:arslansahil850@gmail.com">arslansahil850@gmail.com</a></p>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <div class="container footer-bottom-container">
+        <p>&copy; <span id="currentYear">2026</span> Arslan Weblab. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <div class="search-overlay" id="searchOverlay">
+    <div class="search-overlay-backdrop" id="searchOverlayBackdrop"></div>
+    <div class="search-overlay-container">
+      <div class="search-overlay-header">
+        <div class="search-input-wrapper">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg>
+          <input type="text" id="globalSearchInput" placeholder="Type to search projects across all categories (Press Esc to close)..." aria-label="Global Search">
+          <button class="search-clear-btn" id="searchClearBtn" style="display: none;" aria-label="Clear Search">&times;</button>
+        </div>
+        <button class="search-close-btn" id="searchCloseBtn" aria-label="Close Search Overlay">&times;</button>
+      </div>
+      <div class="search-overlay-body">
+        <div class="search-history-section" id="searchHistorySection" style="display: none;">
+          <div class="section-subhead">
+            <span>Recent Searches</span>
+            <button class="clear-history-btn" id="clearHistoryBtn">Clear History</button>
+          </div>
+          <div class="search-history-tags" id="searchHistoryTags"></div>
+        </div>
+        <div class="suggested-categories-section">
+          <span class="section-subhead-label">Suggested Categories</span>
+          <div class="suggested-pills" id="suggestedPills">
+            <button class="suggestion-pill" data-cat="frontend">Frontend</button>
+            <button class="suggestion-pill" data-cat="backend">Backend</button>
+            <button class="suggestion-pill" data-cat="full-stack">Full Stack</button>
+            <button class="suggestion-pill" data-tag="JavaScript">JavaScript</button>
+            <button class="suggestion-pill" data-tag="Node.js">Node.js</button>
+          </div>
+        </div>
+        <div class="search-results-section">
+          <div class="search-results-header" id="searchResultsHeader" style="display: none;">
+            <span id="searchResultsCount">0 results found</span>
+          </div>
+          <div class="search-results-grid" id="searchResultsGrid">
+            <div class="search-initial-state">
+              <p>Start typing above to search instantly across all projects, tags, and categories.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <button id="backToTopBtn" class="back-to-top" aria-label="Back to Top">
+    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="18 15 12 9 6 15"></polyline></svg>
+  </button>
+</body>
+</html>
