@@ -4,7 +4,7 @@ const projectsData = [
     title: "Website Design 1",
     description: "A responsive landing page with a modern interface and design.",
     category: "frontend",
-    subcategory: "html-css",
+    subcategory: "static-pages",
     image: "assets/web-design1.webp",
     live: "https://webpage-design-1.netlify.app/",
     github: "https://github.com/arslansahil850-alt/Website-Design-1/",
@@ -17,7 +17,7 @@ const projectsData = [
     title: "BLOGO Static Page",
     description: "A responsive Blogo landing page with a modern interface.",
     category: "frontend",
-    subcategory: "html-css",
+    subcategory: "static-pages",
     image: "assets/blogostatic.webp",
     live: "https://blogo-static-page.netlify.app/",
     github: "https://github.com/arslansahil850-alt/Blogo-Static-Page/",
@@ -30,7 +30,7 @@ const projectsData = [
     title: "BLOGO Static Page 2",
     description: "A responsive Blogo landing page with a modern interface.",
     category: "frontend",
-    subcategory: "html-css",
+    subcategory: "static-pages",
     image: "assets/blogo-static2.webp",
     live: "https://blogo-static-page2.netlify.app/",
     github: "https://github.com/arslansahil850-alt/Blogo-Static-Page2/",
@@ -43,7 +43,7 @@ const projectsData = [
     title: "FOODIE Static Page",
     description: "A responsive FOODIE landing page with a modern interface.",
     category: "frontend",
-    subcategory: "html-css",
+    subcategory: "static-pages",
     image: "assets/foodie-static.webp",
     live: "https://foodie-static-page.netlify.app/",
     github: "https://github.com/arslansahil850-alt/Foodie-Static-Page/",
@@ -56,7 +56,7 @@ const projectsData = [
     title: "DASHBOARD Static Page",
     description: "A responsive dashboard UI landing page with a modern interface.",
     category: "frontend",
-    subcategory: "html-css",
+    subcategory: "static-pages",
     image: "assets/dashboard.webp",
     live: "https://dashboard-static-page.netlify.app/",
     github: "https://github.com/arslansahil850-alt/Dashboard-UI/",
@@ -69,7 +69,7 @@ const projectsData = [
     title: "SHOPORA Static Page",
     description: "A responsive SHOPORA landing page with a modern interface.",
     category: "frontend",
-    subcategory: "html-css",
+    subcategory: "static-pages",
     image: "assets/shopora-static.webp",
     live: "https://shopora-static-page.netlify.app/",
     github: "https://github.com/arslansahil850-alt/Shopora-Static-Page/",
@@ -278,7 +278,7 @@ const projectsData = [
     description: "A complete hotel booking demo web project combining multiple technologies.",
     category: "frontend",
     subcategory: "web-projects",
-    image: "assets/real-estate.webp", 
+    image: "assets/real-estate.webp",
     live: "https://hotel-booking-website-alpha-gray.vercel.app/",
     github: "https://github.com/arslansahil850-alt/Stayora-Website",
     tags: ["HTML", "CSS", "JavaScript"],
@@ -355,12 +355,64 @@ const projectsData = [
     title: "Navbar Collections",
     description: "10 modern navbar designs: a collection of responsive, creative, and modern navigation concepts.",
     category: "frontend",
-    subcategory: "web-projects",
+    subcategory: "learn-code",
     image: "assets/navbars.webp",
     live: "https://navbar-collections.netlify.app/",
     github: "https://github.com/arslansahil850-alt/Navbars/",
     tags: ["HTML", "CSS", "JavaScript"],
     featured: false,
+    date: null
+  },
+  {
+    id: "backend-phase-1",
+    title: "Backend Development - Phase 1",
+    description: "A structured backend development learning project covering JavaScript fundamentals, asynchronous programming, Node.js basics, HTTP fundamentals, and Express.js introduction.",
+    category: "backend",
+    subcategory: "learn-code",
+    image: "assets/backend-phase-1.webp",
+    live: "https://backend-phase-1-tawny.vercel.app/",
+    github: "https://github.com/arslansahil850-alt/Backend-Phase-1",
+    tags: ["JavaScript", "Node.js", "HTTP", "Express.js"],
+    featured: true,
+    date: null
+  },
+  {
+    id: "backend-phase-2",
+    title: "Backend Development - Phase 2",
+    description: "A comprehensive backend development learning project covering backend fundamentals, Node.js, Express.js, routing, APIs, and practical backend concepts.",
+    category: "backend",
+    subcategory: "learn-code",
+    image: "assets/backend-phase-2.webp",
+    live: "https://backend-phase-2.vercel.app/",
+    github: "https://github.com/arslansahil850-alt/Backend-Phase-2",
+    tags: ["Node.js", "Express.js", "APIs", "Backend"],
+    featured: true,
+    date: null
+  },
+  {
+    id: "backend-phase-3",
+    title: "Backend Development - Phase 3",
+    description: "An advanced backend development learning project focused on expanding backend knowledge through practical concepts, structured lessons, and development exercises.",
+    category: "backend",
+    subcategory: "learn-code",
+    image: "assets/backend-phase-3.webp",
+    live: "https://backend-bhase-2.vercel.app/",
+    github: "https://github.com/arslansahil850-alt/Backend-Phase-3",
+    tags: ["Node.js", "Express.js", "Backend Development", "Projects"],
+    featured: true,
+    date: null
+  },
+  {
+    id: "backend-phase-4",
+    title: "Backend Development - Phase 4",
+    description: "An advanced backend development learning project covering essential backend concepts through structured lessons, practical examples, coding exercises, and revision.",
+    category: "backend",
+    subcategory: "learn-code",
+    image: "assets/backend-phase-4.webp",
+    live: "https://backend-phase-4-five.vercel.app/",
+    github: "https://github.com/arslansahil850-alt/Backend-Phase-4",
+    tags: ["Node.js", "Express.js", "Backend Development", "Advanced Concepts"],
+    featured: true,
     date: null
   }
 ];
@@ -370,14 +422,14 @@ const portfolioData = [
     id: "portfolio-arslan-weblab",
     name: "Arslan Weblab",
     description: "The primary digital laboratory and professional showcase representing modern full stack web development experiments.",
-    image: "assets/portfolio(1).jpg",
+    image: "assets/web-portfolio.webp",
     url: "https://arslan-weblab.netlify.app/"
   },
   {
     id: "portfolio-personal-brand",
     name: "Personal Brand Hub",
     description: "Centralized project discovery portal and engineering archive indexing technical applications and code repositories.",
-    image: "images/projects/project.webp",
+    image: "",
     url: "#"
   }
 ];
@@ -396,6 +448,7 @@ const categoryConfig = {
   backend: {
     name: "Backend Projects",
     subcategories: [
+      { id: "learn-code", name: "Learn Code" },
       { id: "node-express", name: "Node.js & Express.js" },
       { id: "database-development", name: "Database Development" },
       { id: "auth-security", name: "Authentication & Security" },
@@ -417,7 +470,7 @@ let currentSubcategory = "all";
 let currentSearchQuery = "";
 let currentSort = "featured";
 let currentPage = 1;
-const projectsPerPage = 6;
+const projectsPerPage = 9;
 let searchHistory = [];
 
 document.addEventListener("DOMContentLoaded", () => {
@@ -432,6 +485,7 @@ document.addEventListener("DOMContentLoaded", () => {
   initBackToTop();
   initFooterYear();
   loadSearchHistory();
+  initThreeVisual();
 });
 
 function initThemeSystem() {
@@ -470,22 +524,49 @@ function initNavigation() {
   const header = document.getElementById("header");
 
   if (mobileToggle && navMenu) {
-    mobileToggle.addEventListener("click", () => {
-      navMenu.classList.toggle("active");
+    const closeMobileMenu = () => {
+      navMenu.classList.remove("active");
+      mobileToggle.classList.remove("active");
+      mobileToggle.setAttribute("aria-expanded", "false");
+    };
+
+    mobileToggle.addEventListener("click", (e) => {
+      e.stopPropagation();
+      const isActive = navMenu.classList.toggle("active");
+      mobileToggle.classList.toggle("active", isActive);
+      mobileToggle.setAttribute("aria-expanded", isActive ? "true" : "false");
     });
 
     navMenu.querySelectorAll(".nav-link").forEach((link) => {
-      link.addEventListener("click", () => {
-        navMenu.classList.remove("active");
-      });
+      link.addEventListener("click", closeMobileMenu);
+    });
+
+    document.addEventListener("click", (e) => {
+      if (!navMenu.contains(e.target) && !mobileToggle.contains(e.target)) {
+        closeMobileMenu();
+      }
+    });
+
+    document.addEventListener("keydown", (e) => {
+      if (e.key === "Escape") {
+        closeMobileMenu();
+      }
+    });
+
+    window.addEventListener("resize", () => {
+      if (window.innerWidth > 768) {
+        closeMobileMenu();
+      }
     });
   }
 
   window.addEventListener("scroll", () => {
-    if (window.scrollY > 40) {
-      header.classList.add("scrolled");
-    } else {
-      header.classList.remove("scrolled");
+    if (header) {
+      if (window.scrollY > 40) {
+        header.classList.add("scrolled");
+      } else {
+        header.classList.remove("scrolled");
+      }
     }
   });
 }
@@ -516,26 +597,45 @@ function initSidebarExplorer() {
   const toggleBtn = document.getElementById("sidebarToggleBtn");
   const closeBtn = document.getElementById("sidebarCloseBtn");
 
-  if (!container) return;
+  if (!container || !sidebar || !overlay) return;
 
   renderSidebarCategories(container);
 
-  if (toggleBtn && sidebar && overlay) {
-    toggleBtn.addEventListener("click", () => {
-      sidebar.classList.add("active");
-      overlay.classList.add("active");
-    });
+  const openSidebar = () => {
+    sidebar.classList.add("active");
+    overlay.classList.add("active");
+    if (toggleBtn) {
+      toggleBtn.classList.add("hidden");
+      toggleBtn.setAttribute("aria-expanded", "true");
+    }
+    updateBodyScrollLock();
+  };
 
-    closeBtn.addEventListener("click", () => {
-      sidebar.classList.remove("active");
-      overlay.classList.remove("active");
-    });
+  const closeSidebar = () => {
+    sidebar.classList.remove("active");
+    overlay.classList.remove("active");
+    if (toggleBtn) {
+      toggleBtn.classList.remove("hidden");
+      toggleBtn.setAttribute("aria-expanded", "false");
+    }
+    updateBodyScrollLock();
+  };
 
-    overlay.addEventListener("click", () => {
-      sidebar.classList.remove("active");
-      overlay.classList.remove("active");
-    });
+  if (toggleBtn) {
+    toggleBtn.addEventListener("click", openSidebar);
   }
+
+  if (closeBtn) {
+    closeBtn.addEventListener("click", closeSidebar);
+  }
+
+  overlay.addEventListener("click", closeSidebar);
+
+  document.addEventListener("keydown", (e) => {
+    if (e.key === "Escape" && sidebar.classList.contains("active")) {
+      closeSidebar();
+    }
+  });
 }
 
 function renderSidebarCategories(container) {
@@ -543,6 +643,7 @@ function renderSidebarCategories(container) {
 
   const allCount = projectsData.length;
   const allBtn = document.createElement("button");
+  allBtn.type = "button";
   allBtn.className = `sidebar-cat-btn ${currentCategory === "all" ? "active" : ""}`;
   allBtn.innerHTML = `<span>All Projects</span><span class="cat-count-badge">${allCount}</span>`;
   allBtn.addEventListener("click", () => {
@@ -561,6 +662,7 @@ function renderSidebarCategories(container) {
 
     const catCount = projectsData.filter((p) => p.category === catKey).length;
     const catBtn = document.createElement("button");
+    catBtn.type = "button";
     catBtn.className = `sidebar-cat-btn ${currentCategory === catKey && currentSubcategory === "all" ? "active" : ""}`;
     catBtn.innerHTML = `<span>${catObj.name}</span><span class="cat-count-badge">${catCount}</span>`;
     catBtn.addEventListener("click", () => {
@@ -579,6 +681,7 @@ function renderSidebarCategories(container) {
       const subCount = projectsData.filter((p) => p.category === catKey && p.subcategory === sub.id).length;
       const subLi = document.createElement("li");
       const subBtn = document.createElement("button");
+      subBtn.type = "button";
       subBtn.className = `sidebar-subcat-btn ${currentSubcategory === sub.id ? "active" : ""}`;
       subBtn.innerHTML = `<span>${sub.name}</span><span class="cat-count-badge">${subCount}</span>`;
       subBtn.addEventListener("click", (e) => {
@@ -601,9 +704,16 @@ function renderSidebarCategories(container) {
 function closeMobileSidebar() {
   const sidebar = document.getElementById("projectSidebar");
   const overlay = document.getElementById("sidebarOverlay");
+  const toggleBtn = document.getElementById("sidebarToggleBtn");
+
   if (sidebar && overlay) {
     sidebar.classList.remove("active");
     overlay.classList.remove("active");
+    if (toggleBtn) {
+      toggleBtn.classList.remove("hidden");
+      toggleBtn.setAttribute("aria-expanded", "false");
+    }
+    updateBodyScrollLock();
   }
 }
 
@@ -696,9 +806,9 @@ function getFilteredAndSortedProjects() {
     if (currentSort === "featured") {
       return (b.featured ? 1 : 0) - (a.featured ? 1 : 0);
     } else if (currentSort === "newest") {
-      return new Date(b.date) - new Date(a.date);
+      return new Date(b.date || 0) - new Date(a.date || 0);
     } else if (currentSort === "oldest") {
-      return new Date(a.date) - new Date(b.date);
+      return new Date(a.date || 0) - new Date(b.date || 0);
     } else if (currentSort === "az") {
       return a.title.localeCompare(b.title);
     } else if (currentSort === "za") {
@@ -732,7 +842,7 @@ function renderProjectsGrid() {
       <div class="empty-state-container">
         <h3 class="empty-state-title">No Projects Found</h3>
         <p class="empty-state-desc">We couldn't find any projects matching your current filter criteria or search query. Try clearing your filters.</p>
-        <button class="btn btn-primary" onclick="resetAllFilters()">Reset All Filters</button>
+        <button type="button" class="btn btn-primary" onclick="resetAllFilters()">Reset All Filters</button>
       </div>
     `;
     if (paginationContainer) paginationContainer.style.display = "none";
@@ -796,6 +906,7 @@ function renderPagination(totalPages, container) {
   container.innerHTML = "";
 
   const prevBtn = document.createElement("button");
+  prevBtn.type = "button";
   prevBtn.className = "pagination-btn";
   prevBtn.textContent = "Previous";
   prevBtn.disabled = currentPage === 1;
@@ -803,24 +914,32 @@ function renderPagination(totalPages, container) {
     if (currentPage > 1) {
       currentPage--;
       renderProjectsGrid();
-      window.scrollTo({ top: document.getElementById("projects").offsetTop - 100, behavior: "smooth" });
+      const projSec = document.getElementById("projects");
+      if (projSec) {
+        window.scrollTo({ top: projSec.offsetTop - 100, behavior: "smooth" });
+      }
     }
   });
   container.appendChild(prevBtn);
 
   for (let i = 1; i <= totalPages; i++) {
     const pageBtn = document.createElement("button");
+    pageBtn.type = "button";
     pageBtn.className = `pagination-btn ${currentPage === i ? "active" : ""}`;
     pageBtn.textContent = i;
     pageBtn.addEventListener("click", () => {
       currentPage = i;
       renderProjectsGrid();
-      window.scrollTo({ top: document.getElementById("projects").offsetTop - 100, behavior: "smooth" });
+      const projSec = document.getElementById("projects");
+      if (projSec) {
+        window.scrollTo({ top: projSec.offsetTop - 100, behavior: "smooth" });
+      }
     });
     container.appendChild(pageBtn);
   }
 
   const nextBtn = document.createElement("button");
+  nextBtn.type = "button";
   nextBtn.className = "pagination-btn";
   nextBtn.textContent = "Next";
   nextBtn.disabled = currentPage === totalPages;
@@ -828,7 +947,10 @@ function renderPagination(totalPages, container) {
     if (currentPage < totalPages) {
       currentPage++;
       renderProjectsGrid();
-      window.scrollTo({ top: document.getElementById("projects").offsetTop - 100, behavior: "smooth" });
+      const projSec = document.getElementById("projects");
+      if (projSec) {
+        window.scrollTo({ top: projSec.offsetTop - 100, behavior: "smooth" });
+      }
     }
   });
   container.appendChild(nextBtn);
@@ -866,10 +988,10 @@ function initContactForm() {
 
   form.addEventListener("submit", (e) => {
     e.preventDefault();
-    const name = document.getElementById("contactName").value.trim();
-    const email = document.getElementById("contactEmail").value.trim();
-    const purpose = document.getElementById("contactPurpose").value;
-    const message = document.getElementById("contactMessage").value.trim();
+    const name = document.getElementById("contactName")?.value.trim() || "";
+    const email = document.getElementById("contactEmail")?.value.trim() || "";
+    const purpose = document.getElementById("contactPurpose")?.value || "";
+    const message = document.getElementById("contactMessage")?.value.trim() || "";
 
     if (!name || !email || !purpose || !message) {
       showFeedback(feedback, "Please fill out all required fields.", "error");
@@ -890,7 +1012,6 @@ function showFeedback(el, msg, type) {
     el.style.display = "none";
   }, 6000);
 }
-
 function initGlobalSearch() {
   const triggerBtn = document.getElementById("searchTriggerBtn");
   const overlay = document.getElementById("searchOverlay");
@@ -905,26 +1026,49 @@ function initGlobalSearch() {
   const historyTags = document.getElementById("searchHistoryTags");
   const clearHistoryBtn = document.getElementById("clearHistoryBtn");
   const suggestedPills = document.getElementById("suggestedPills");
+  const sidebarToggleBtn = document.getElementById("sidebarToggleBtn"); // Added reference
 
   if (!triggerBtn || !overlay) return;
 
   const openSearch = () => {
     overlay.classList.add("active");
+    overlay.setAttribute("aria-hidden", "false");
+
+    // Hide the category sidebar toggle button when search opens
+    if (sidebarToggleBtn) {
+      sidebarToggleBtn.classList.add("hidden");
+    }
+
+    updateBodyScrollLock();
+
     if (input) {
       input.value = "";
       input.focus();
     }
+
     renderSearchHistory();
-    resultsHeader.style.display = "none";
-    resultsGrid.innerHTML = `
-      <div class="search-initial-state">
-        <p>Start typing above to search instantly across all projects, tags, and categories.</p>
-      </div>
-    `;
+    if (resultsHeader) resultsHeader.style.display = "none";
+
+    if (resultsGrid) {
+      resultsGrid.innerHTML = `
+        <div class="search-initial-state">
+          <p>Start typing above to search instantly across all projects, tags, and categories.</p>
+        </div>
+      `;
+    }
   };
 
   const closeSearch = () => {
     overlay.classList.remove("active");
+    overlay.setAttribute("aria-hidden", "true");
+
+    // Restore the category sidebar toggle button when search closes (unless sidebar is currently active)
+    const sidebar = document.getElementById("projectSidebar");
+    if (sidebarToggleBtn && (!sidebar || !sidebar.classList.contains("active"))) {
+      sidebarToggleBtn.classList.remove("hidden");
+    }
+
+    updateBodyScrollLock();
   };
 
   triggerBtn.addEventListener("click", openSearch);
@@ -953,12 +1097,14 @@ function initGlobalSearch() {
     clearBtn.addEventListener("click", () => {
       if (input) input.value = "";
       clearBtn.style.display = "none";
-      resultsHeader.style.display = "none";
-      resultsGrid.innerHTML = `
-        <div class="search-initial-state">
-          <p>Start typing above to search instantly across all projects, tags, and categories.</p>
-        </div>
-      `;
+      if (resultsHeader) resultsHeader.style.display = "none";
+      if (resultsGrid) {
+        resultsGrid.innerHTML = `
+          <div class="search-initial-state">
+            <p>Start typing above to search instantly across all projects, tags, and categories.</p>
+          </div>
+        `;
+      }
       if (input) input.focus();
     });
   }
@@ -1026,6 +1172,7 @@ function renderSearchHistory() {
 
   searchHistory.forEach((term) => {
     const tag = document.createElement("button");
+    tag.type = "button";
     tag.className = "history-tag";
     tag.innerHTML = `<span>${term}</span>`;
     tag.addEventListener("click", () => {
@@ -1075,10 +1222,10 @@ function executeGlobalSearch(query) {
   resultsHeader.style.display = "block";
 
   if (matches.length === 0) {
-    resultsCount.textContent = `No exact matches found for "${query}". Showing related projects:`;
+    if (resultsCount) resultsCount.textContent = `No exact matches found for "${query}". Showing related projects:`;
     matches = projectsData.slice(0, 3);
   } else {
-    resultsCount.textContent = `${matches.length} result(s) found for "${query}"`;
+    if (resultsCount) resultsCount.textContent = `${matches.length} result(s) found for "${query}"`;
   }
 
   resultsGrid.innerHTML = "";
@@ -1198,10 +1345,8 @@ function initThreeVisual() {
     mouseY = (e.clientY / window.innerHeight - 0.5) * 0.4;
   });
 
-  let animationFrameId;
-
   function animate() {
-    animationFrameId = requestAnimationFrame(animate);
+    requestAnimationFrame(animate);
 
     universeGroup.rotation.y += 0.008;
     universeGroup.rotation.x = Math.sin(Date.now() * 0.001) * 0.12;
@@ -1225,4 +1370,17 @@ function initThreeVisual() {
     camera.updateProjectionMatrix();
     renderer.setSize(newW, newH);
   });
+}
+
+function updateBodyScrollLock() {
+  const searchOverlay = document.getElementById("searchOverlay");
+  const sidebar = document.getElementById("projectSidebar");
+
+  const isSearchOpen = searchOverlay?.classList.contains("active");
+  const isSidebarOpen = sidebar?.classList.contains("active");
+
+  document.body.classList.toggle(
+    "modal-open",
+    Boolean(isSearchOpen || isSidebarOpen)
+  );
 }
